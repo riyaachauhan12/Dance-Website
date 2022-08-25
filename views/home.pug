@@ -1,0 +1,53 @@
+extends base.pug  
+
+block scripts 
+   scripts(src='/static/index.js')
+
+block style 
+    style 
+      include ../static/style.css
+
+block content 
+
+    <section id="introSection">
+     div Welcome to Riya's Dance Academy 
+     div.small Eat Sleep Dance Repeat 
+
+    </section>
+
+    <section id="missionSection"> 
+     h2 Our Mission 
+    div.card  
+     h3 | Dance Perfection 
+     div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    div.card
+     h3 | Dance the way you like
+     div.card-box
+                div.card-img
+                    img(src="/static/3.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+    div.card
+     h3 | Expert teaching 
+     div.card-box
+                div.card-img
+                    img(src="/static/4.png")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+    </section>
+
+    <section id="sponsorsSection">
+    h2 Our Sponsors
+    #sponsors  
+     img(src="/static/apple.png", alt="sponsor image", class="spimage")
+     img(src="/static/microsoft.jpg", alt="sponsor image",class="spimage")
+     img(src="/static/hp.png", alt="sponsor image", class="spimage")
+     img(src="/static/skype.png", alt="sponsor image", class="spimage")
+
+    </section>
+        

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- <title>Using plain html in Pug</title> -->
+    <title>#{title}</title>
+
+    style
+        include ../static/style.css
+ 
+  </head>
+  <body>
+    <nav id="navbar" class="top">
+      <ul>
+      div#logo
+              img(src="/static/logo.png")
+              
+
+      <li><a href="/">Home</a></li>
+      <li><a href="/">About</a></li>
+      <li><a href="/">Services</a></li>
+      <li><a href="/">Contact us</a></li>
+      <li><a href="/">Class info</a></li>
+      </ul>
+    </nav>
+
+    <section id="introSection">
+     div Welcome to Riya's Dance Academy 
+     div.small Eat Sleep Dance Repeat 
+
+    </section>
+
+    <section id="missionSection"> 
+     h2 Our Mission 
+    div.card  
+     h3 | Dance Perfection 
+     div.card-box
+                div.card-img
+                    img(src="/static/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    div.card
+     h3 | Dance the way you like
+     div.card-box
+                div.card-img
+                    img(src="/static/3.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+    div.card
+     h3 | Expert teaching 
+     div.card-box
+                div.card-img
+                    img(src="/static/4.png")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+    </section>
+
+    <section id="sponsorsSection">
+    h2 Our Sponsors
+    #sponsors  
+     img(src="/static/apple.png", alt="sponsor image", class="spimage")
+     img(src="/static/microsoft.jpg", alt="sponsor image",class="spimage")
+     img(src="/static/hp.png", alt="sponsor image", class="spimage")
+     img(src="/static/skype.png", alt="sponsor image", class="spimage")
+
+    </section>
+
+    <footer id="footer">
+      |Copyright© 2019 RiyaDanceAcademy.com | All rights reserved 
+    </footer>
+
+    script 
+        include ../static/index.js
+
+  </body>
+</html>
